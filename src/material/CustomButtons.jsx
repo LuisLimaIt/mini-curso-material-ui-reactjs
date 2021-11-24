@@ -19,7 +19,7 @@ const CustomButtons = (props) => {
     const classes = useStyle();
 
     return (
-        <div style={{display: "flex", flexWrap: "wrap", padding: "10px"}}>
+        <div style={{padding: "1rem"}}>
             <Button className={classes.buttonStyle}>
                 Meu Botão Personalizado
             </Button>
