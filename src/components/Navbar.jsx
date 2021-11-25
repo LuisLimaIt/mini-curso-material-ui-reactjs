@@ -22,7 +22,7 @@ const Navbar = () => {
                     <IconButton 
                         color="inherit" 
                         aria-label='menu'
-                        classname={classes.menuButton} 
+                        className={classes.menuButton} 
                     >
                         <MenuIcon />
                     </IconButton>

@@ -3,8 +3,9 @@ import React from "react";
 import theme from "./themeConfig"
 import Button from '@material-ui/core/Button'
 import Navbar from "./components/Navbar";
-import Typography from '@material-ui/core/Typography'
+// import Typography from '@material-ui/core/Typography'
 import Listas from "./components/Listas";
+import Oculto from "./components/Oculto";
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       <Button variant="contained" color="secondary">
         Botão
       </Button>
-      
+
       <Listas />
+
+      <Oculto />
     </ThemeProvider>
   );
 }
