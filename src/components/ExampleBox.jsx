@@ -1,36 +1,31 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 
 const ExampleBox = () => {
     return (
         <div>
-            <Box
-                color={'primary.main'}
-            >
-                Box
-            </Box>
-            <Box
-                color={'primary.contrastText'}
-                bgcolor={'primary.main'}
-            >
-                Box
-            </Box>
-            <Box
-                color={'primary.contrastText'}
-                bgcolor={'primary.main'}
-                mt={2}
-                px={5}
-            >
-                Box
-            </Box>
-            <Box
-                my={2}
-                p={5}
-                border={2}
-                borderColor={'error.main'}
-            >
-                Box
-            </Box>
+            <Grid container>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Box 
+                        bgcolor={'pink'}
+                        p={3}
+                        fontWeight={700}
+                        textAlign={'center'}
+                    >
+                        XS12
+                    </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Box 
+                        bgcolor={'lightblue'}
+                        p={3}
+                        fontWeight={700}
+                        textAlign={'center'}
+                    >
+                        XS12
+                    </Box>
+                </Grid>
+            </Grid>
         </div>
     );
 }
