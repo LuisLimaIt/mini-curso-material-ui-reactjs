@@ -17,18 +17,20 @@ const estilos = makeStyles(theme => ({
     toolbar: theme.mixins.toolbar
 }))
 
-const Gaveta = () => {
+const Gaveta = ({ variant, open, onClose }) => {
 
     const classes = estilos();
 
     return (
         <Drawer
             className={classes.drawer}
-            variant='permanent'
             classes={{
                 paper: classes.drawerPaper,
             }}
             anchor='left'
+            variant={variant}
+            open={open}
+            onClose={onClose? onClose : null}
         >
             <div className={classes.toolbar}></div>
             <Divider />
