@@ -5,6 +5,7 @@ import {
     makeStyles
 } from '@material-ui/core'
 import Gaveta from './Gaveta';
+import ExampleBox from './ExampleBox';
 
 const estilos = makeStyles(theme => ({
     root: {
@@ -45,7 +46,7 @@ const DrawerEstatico = () => {
             </Hidden>
             <div className={classes.content}>
                 <div className={classes.toolbar}></div>
-                Conteúdo
+                <ExampleBox />
             </div>
         </div>
     );
